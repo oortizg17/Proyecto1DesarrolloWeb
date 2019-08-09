@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="container dos">
+
+            <form action="index.php" method="POST">
+
+                <div class="form-group">
+                    <label for=""><strong>Nombre</strong></label>
+                    <input type="text" name="name" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><strong>Apellido</strong></label>
+                    <input id="apellido" name="lastname" type="text" class="form-control" placeholder="Ingresa tu apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for=""><strong>Edad</strong></label>
+                    <input type="number" name="age" id="edad" class="form-control" placeholder="Ingresa tu edad" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><strong>Seleccione un genero</strong></label>
+                    <select name="gender" id="genero" class="form-control" required>
+                            <option value="">Seleccione una opcion</option>
+                            <option value="H">H</option>
+                            <option value="M">M</option> 
+                        </select>
+                </div>
+
+                <div class="form-group col-md-6 d-inline-block">
+                    <label for=""><strong>Estatura</strong></label>
+                    <input type="number" name="high" id="estatura" class="form-control" placeholder="Estatura en cm" required>
+                </div>
+
+                <div class="form-group col-md-5 d-inline-block">
+                    <label for=""><strong>Peso</strong></label>
+                    <input type="number" name="weight" id="peso" class="form-control" placeholder="Peso en lbs" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><strong>Padecimiento Medico</strong></label>
+                    <input type="text" name="condition" id="padecimiento" class="form-control" placeholder="Ingresa su enfermedad" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><strong>Alergia</strong></label>
+                    <input type="text" name="al" id="alergia" class="form-control" placeholder="tipo de alergia" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><strong>Reacciones</strong></label>
+                    <input type="text" name="ra" id="reacciones" class="form-control" placeholder="tipo de reaccion" required>
+                </div>
+
+                <div class="form-group">
+                    <label for=""><strong>Grupo Sanguineo</strong></label>
+                    <input type="text" name="gs" id="sangre" class="form-control" placeholder="Grupo Sanguineo">
+                </div>
+                <button type="submit" name="submit" class="btn btn-dark btn-block"> Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
